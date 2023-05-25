@@ -1,0 +1,8 @@
+{
+  "java-in-action": [{
+    "text": "第九章 容器",
+    "items": [
+      { "text": "9.1 泛型Generics", "link": "collection/generics" }
+    ]
+  }]
+}
