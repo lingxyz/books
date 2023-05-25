@@ -1,3 +1,4 @@
+import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
@@ -31,5 +32,18 @@ export default defineConfig({
     './LICENSE',
   ],
   base: '/books/',
-  lastUpdated: true
+  lastUpdated: true,
+  vite: {
+    resolve: {
+      // Overriding Internal Components
+      alias: [
+        {
+          find: /^.*\/VPFeatures\.vue$/,
+          replacement: fileURLToPath(
+            new URL('./theme/components/VPFeatures.vue', import.meta.url)
+          )
+        }
+      ]
+    }
+  }
 })
