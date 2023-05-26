@@ -16,20 +16,124 @@ hero:
 
 features:
   - icon: 📝
-    title: Java实战教程系列
+    title: 《Java 实战教程系列》
     details: 速学堂
     link: /java-in-action/introduction/develop
     tag: Java
 
+  - icon: 📝
+    title: 《Java 面试题集》
+    details: 速学堂
+    tag: Java
+
+  - icon: 📝
+    title: 《Java 编程的逻辑》
+    details: xxx
+    tag: Java
+
+  - icon: 📝
+    title: 《Java教程》
+    details: 廖雪峰
+    tag: Java
+
+  - icon: 📝
+    title: 《Spring Boot入门教程》
+    details: 易百教程
+    link: https://www.yiibai.com/spring-boot/
+    tag: Java
+
+  - icon: 📝
+    title: 《Mybatis入门教程》
+    details: 易百教程
+    tag: Java
+
+  - icon: 📝
+    title: 《ClickHouse 官方文档》
+    details: xxx
+    tag: Data
+
+  - icon: 📝
+    title: 《一套上手ClickHouse》
+    details: 尚硅谷
+    link: https://www.bilibili.com/video/BV1Yh411z7os/
+    tag: Data
+
   - icon: 🚀
-    title: Clean Architecture
+    title: 《TypeScript 官方文档》
+    details: xxx
+    tag: JavaScript
+
+  - icon: 🚀
+    title: ES6标准入门
+    details: 阮一峰
+    tag: JavaScript
+
+  - icon: <svg class="logo" viewBox="0 0 128 128" width="24" height="24" data-v-53ccc107=""><path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z" data-v-53ccc107=""></path><path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-53ccc107=""></path></svg>
+    title: 《Vue3 官方文档》
+    details: Evan You
+    tag: JavaScript
+
+  - icon: 🚀
+    title: 《图解 HTTP》
+    details: xxx
+    tag: JavaScript
+
+  - icon: 🚀
+    title: 《Nest.js 官方文档》
+    details: xxx
+    tag: JavaScript
+
+  - icon: 🚀
+    title: 《TypeORM 官方文档》
+    details: xxx
+    tag: JavaScript
+
+  - icon: 🚀
+    title: 《人工智能（Python）教程》
+    details: 易百教程
+    link: https://www.yiibai.com/ai_with_python
+    tag: AI
+
+  - icon: 🚀
+    title: 《Clean Architecture》
     details: Robert C. Martin
     link: /clean-architecture/
     tag: Architecture
 
-  - icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#41b883" d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6 3.22-5.6Z"/><path fill="#41b883" d="m2 3.925 14 24.15 14-24.15h-5.6L16 18.415 7.53 3.925Z"/><path fill="#35495e" d="M7.53 3.925 16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"/></svg>
-    title: Lean UX
+  - icon: 🚀
+    title: 《Lean UX》
     details: Jeff Gothelf
     link: /lean-ux/
+    tag: Management
+
+  - icon: 🚀
+    title: 《敏捷革命》
+    details: xxx
+    tag: Management
+
+  - icon: 🚀
+    title: 《知行-技术人的管理之路》
+    details: xxx
+    tag: Management
+
+  - icon: 🚀
+    title: 《原则》
+    details: 瑞 · 达利欧
+    tag: Management
+
+  - icon: 🚀
+    title: 《鬼谷子》
+    details: 鬼谷子
+    link: /guiguzi/
+    tag: Management
+
+  - icon: 🚀
+    title: 《菜根谭》
+    details: xxx
+    tag: Management
+
+  - icon: 🚀
+    title: 《孙子兵法》
+    details: xxx
     tag: Management
 ---

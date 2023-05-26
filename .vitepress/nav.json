@@ -2,5 +2,7 @@
   { "text": "Home", "link": "https://zhangling.site" },
   { "text": "Java", "link": "#Java" },
   { "text": "JavaScript", "link": "#JavaScript" },
-  { "text": "DataBase", "link": "#DataBase" }
+  { "text": "Data", "link": "#Data" },
+  { "text": "AI", "link": "#AI" },
+  { "text": "Management", "link": "#Management" }
 ]
