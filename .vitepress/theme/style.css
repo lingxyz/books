@@ -89,3 +89,9 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
+/**
+ * Component: VPFeature
+ * -------------------------------------------------------------------------- */
+/* .VPFeature .box .VPImage {
+  width: 100%;
+} */

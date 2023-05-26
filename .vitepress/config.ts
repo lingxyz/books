@@ -22,7 +22,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/lingxyz/books' }
     ],
     editLink: {
-      pattern: 'https://gitee.com/-/ide/project/lingxyz/books/edit/master/-/:path'
+      pattern: 'https://gitee.com/-/ide/project/lingxyz/books/edit/main/-/:path'
     },
     search: {
       provider: 'local'

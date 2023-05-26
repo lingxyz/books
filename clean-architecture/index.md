@@ -1,6 +1,8 @@
 # 📒 精读《架构整洁之道》
 > [豆瓣](https://book.douban.com/subject/6114900/) | [微信读书](https://weread.qq.com/web/reader/480322f072021a3248038c8)
 
+> [语雀资料-待整理](https://www.yuque.com/zeroll/read/xovdsv/edit)
+
 ## 推荐序一
 
 ```
