@@ -18,7 +18,7 @@ features:
   - icon: 📝
     title: 《Java 实战教程系列》
     details: 速学堂
-    link: /java-in-action/introduction/develop
+    link: /java-in-action/
     tag: Java
 
   - icon: 📝
