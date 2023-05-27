@@ -23,13 +23,13 @@
 ```java
 public void test() {
   int i;
-  int j = i+5 ; // 编译出错，变量i还未被初始化
+  int j = i + 5 ; // 编译出错，变量i还未被初始化
 }
 
 public void test() {
   int i;
   i=10;
-  int j = i+5 ; // 编译正确
+  int j = i + 5 ; // 编译正确
 }
 ```
 
@@ -43,7 +43,7 @@ public void test() {
 | -------- | -------- |
 | int      | 0        |
 | double   | 0.0      |
-| char     | ‘\u0000’ |
+| char     | \u0000 |
 | boolean  | false    |
 
 **【示例2-8】实例变量的声明**
@@ -58,6 +58,8 @@ public class Test {
 
 ​		使用`static`定义。 从属于类，生命周期伴随类始终，从类加载到卸载。 (注：讲完内存分析后我们再深入！先放一放这个概念！)如果不自行初始化，与成员变量相同会自动初始化成该类型的默认初始值，如表 2-3所示。
 
+## 课堂练习
+
 **课堂练习1：变量的声明并赋值**
 
 ```java
@@ -71,7 +73,7 @@ public class LocalVariableTest {
     x = 9;                // 为int型变量赋值
     int y = x;            // 声明并初始化int型变量
     float f = 3.15f;      // 声明float型变量并赋值
-    double d = 3.1415926; //声明double型变量并赋值
+    double d = 3.1415926; // 声明double型变量并赋值
   }
 }
 ```
@@ -85,11 +87,11 @@ public class LocalVariableTest {
  */
 public class TestVariable {
   int a;               // 成员变量, 从属于对象； 成员变量会自动被初始化
-  static  int  size;   // 静态变量，从属于类
+  static int size;   // 静态变量，从属于类
 
   public static void main(String[] args) {
     {
-      int age;       // 局部变量，从属于语句块；
+      int age;         // 局部变量，从属于语句块；
       age = 18;
     }
 

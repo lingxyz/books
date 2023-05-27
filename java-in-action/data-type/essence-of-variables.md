@@ -19,9 +19,9 @@ type  varName [=value][,varName[=value]...];
 **【示例2-4】 声明变量：**
 
 ```java
-double  salary;
-long  earthPopulation;
-int  age;
+double salary;
+long earthPopulation;
+int age;
 ```
 
 不同数据类型的常量会在内存中分配不同的空间，如图2-1所示。
@@ -42,7 +42,7 @@ int  age;
 **【示例2-5】在一行中声明多个变量**
 
 ```java
-int` `i ,j; ``// 两个变量的数据类型都是int
+int i ,j; // 两个变量的数据类型都是int
 ```
 
 
@@ -51,11 +51,9 @@ int` `i ,j; ``// 两个变量的数据类型都是int
 
 ​		不提倡这种"一行声明多个变量"风格，**逐一声明每一个变量可以提高程序可读性**。
 
-
-
 **【示例2-6】可以将变量的声明和初始化放在同一行中**
 
 ```java
-int  age = 18;
-double  e = 2.718281828;
+int age = 18;
+double e = 2.718281828;
 ```
