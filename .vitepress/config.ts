@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 import navJson from './nav.json'
-import sidebarJson from './sidebar.json'
+import sidebarJson from './sidebar.js'
 
 export default defineConfig({
   title: "E-Books",
