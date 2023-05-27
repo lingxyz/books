@@ -36,6 +36,7 @@ indexFilesPath.forEach(indexFilePath => {
     if (element.tag === 'h2') {
       const section = {
         text: element.props.id,
+        collapsed: true,
         items: []
       }
       sidebarItems.push(section);
