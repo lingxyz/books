@@ -4,9 +4,8 @@
 
 >  表 2-1 Java 中的关键字/保留字
 
-|            |         |           |           |            |              |
-| ---------- | ------- | --------- | --------- | ---------- | ------------ |
 | abstract   | assert  | boolean   | break     | byte       | case         |
+| ---------- | ------- | --------- | --------- | ---------- | ------------ |
 | catch      | char    | class     | const     | continue   | default      |
 | do         | double  | else      | extends   | final      | finally      |
 | float      | for     | goto      | if        | implements | import       |

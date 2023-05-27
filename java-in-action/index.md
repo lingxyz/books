@@ -32,7 +32,7 @@
 - [2.2 标识符](data-type/identifier.md)
 - [2.3 Java中的关键字/保留字](data-type/keywords.md)
 - [2.4.1 变量的本质](data-type/essence-of-variables.md)
-- 2.4.2 变量的分类
+- [2.4.2 变量的分类](data-type/classification-of-variables.md)
 - 2.5 常量(Constant)
 - 2.6 基本数据类型(primitive data type)
 - 2.6.1 整型变量/常量
