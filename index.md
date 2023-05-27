@@ -8,8 +8,8 @@ hero:
   tagline: Ebooks & reading notes
   actions:
     - theme: brand
-      text: Get Started
-      link: /
+      text: 主页
+      link: https://zhangling.site/
     - theme: alt
       text: View on GitHub
       link: https://github.com/lingxyz/books

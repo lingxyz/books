@@ -1,5 +1,5 @@
 [
-  { "text": "Home", "link": "https://zhangling.site" },
+  { "text": "Home", "link": "/" },
   { "text": "Java", "link": "#Java" },
   { "text": "JavaScript", "link": "#JavaScript" },
   { "text": "Data", "link": "#Data" },
