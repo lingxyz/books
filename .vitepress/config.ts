@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
+import mark from 'markdown-it-mark'
 
 // https://vitepress.dev/reference/site-config
 import navJson from './nav.json'
@@ -44,6 +45,12 @@ export default defineConfig({
           )
         }
       ]
+    }
+  },
+  markdown: {
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(mark)
     }
   }
 })
