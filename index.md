@@ -74,6 +74,12 @@ features:
     tag: JavaScript
 
   - icon: 🚀
+    title: 《Amis 开发指南》
+    details: 杂记
+    link: /amis/
+    tag: JavaScript
+
+  - icon: 🚀
     title: 《图解 HTTP》
     details: xxx
     tag: JavaScript
