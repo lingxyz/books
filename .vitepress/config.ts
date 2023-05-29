@@ -14,6 +14,14 @@ export default defineConfig({
       'link',
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
+    [
+      'link',
+      { rel: 'stylesheet', href: '/plugins/amis/sdk/sdk.css' }
+    ],
+    [
+      'script',
+      { src: '/plugins/amis/sdk/sdk.js' }
+    ],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

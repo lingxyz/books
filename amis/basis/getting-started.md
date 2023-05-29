@@ -85,7 +85,7 @@ try {
 ```
 ```json [package.json]
 /*
- * Usage 1: 
+ * Usage 1:
  * 将脚本配置在 package.json > script 中。举例：
  */
 {
@@ -95,7 +95,7 @@ try {
   }
 }
 /*
- * Usage 2: 
+ * Usage 2:
  * vue.config.js 的 webpack 钩子中。略。
  */
 ```

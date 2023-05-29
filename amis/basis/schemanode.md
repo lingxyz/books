@@ -2,6 +2,7 @@
 
 在 amis 中，==**SchemaNode  = 组件 = 配置文件**==。简单示例：
 
+
 ```json
 {
   "type": "page",
@@ -9,6 +10,12 @@
   "body": "${hello}"
 }
 ```
+
+::: info 渲染效果
+<div id="hello">
+  <slot></slot>
+</div>
+:::
 
 *   其中 ==type 的值 = 要渲染的组件名==，必须有。
 *   ==body== 中可以嵌套组件。格式为 `body: [{type, body}]`。
@@ -48,3 +55,47 @@
   ]
 }
 ```
+
+::: info 渲染效果
+<div id="aa">
+  <slot></slot>
+</div>
+:::
+
+<script lang="ts" setup>
+/* 根据 amis config 渲染组件 */
+const hello = {
+  "type": "page",
+  "data": {"hello": "hello word"},
+  "body": "${hello}"
+}
+const aa = {
+  "type": "page",
+  "definitions": {
+    "aa": {
+      "type": "input-text",
+      "name": "jack",
+      "value": "ref value",
+      "labelRemark": "通过<code>\\$ref</code>引入的组件"
+    }
+  },
+  "body": [
+    {
+      "type": "form",
+      "api": "api/xxx",
+      "actions": [],
+      "body": [
+        {
+          "$ref": "aa"
+        }
+      ]
+    }
+  ]
+}
+
+setTimeout(() => {
+  var amis = amisRequire('amis/embed');
+  amis.embed('#hello', hello);
+  amis.embed('#aa', aa);
+}, 1000)
+</script>
