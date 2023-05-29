@@ -1,6 +1,6 @@
 # SchemaNode
 
-在 amis 中，==SchemaNode  = 组件 = 配置文件==。简单示例：
+在 amis 中，==**SchemaNode  = 组件 = 配置文件**==。简单示例：
 
 ```json
 {

@@ -26,5 +26,3 @@
 - [业务组件库](chain/business-components.md)
 - [可视化编辑器](chain/editor.md)
 - [Amis admin](chain/admin.md)
-
-

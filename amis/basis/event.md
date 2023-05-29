@@ -1,10 +1,10 @@
 # 事件与行为
 
-#### &#x20;事件动作
+## 事件动作
 
-<https://aisuda.bce.baidu.com/amis/zh-CN/docs/concepts/event-action>&#x20;
+> [概念 > 事件动作](https://aisuda.bce.baidu.com/amis/zh-CN/docs/concepts/event-action)
 
-#### 内置行为
+## 内置行为
 
 使用 ==action== 行为按钮组件，触发 amis 内置的页面交互操作。
 
@@ -39,8 +39,8 @@
 }
 ```
 
-#### 事件监听
+## 事件监听
 
 事件监听用于给**复杂的UI交互场景**提供了**通用的解决方案**。
 
-[将 amis 当成 UI 库用 > 事件监听](https://aisuda.bce.baidu.com/amis/zh-CN/docs/extend/ui-library)
+> [将 amis 当成 UI 库用 > 事件监听](https://aisuda.bce.baidu.com/amis/zh-CN/docs/extend/ui-library)

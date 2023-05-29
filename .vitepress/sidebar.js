@@ -32,12 +32,12 @@ indexFilesPath.forEach(indexFilePath => {
   // 组装一个 sidebar items
   const sidebarItems = []
   const key = /(\/[^/]+)+\//.exec(indexFilePath)[0];
+  let collapsedCount = 0; // 统计菜单item总数
   output.body.children.forEach(element => {
     if (element.tag === 'h2') {
       const section = {
         text: element.children.at(-1),
         linkTemp: key + '#' + element.props.id,
-        collapsed: true,
         items: []
       }
       sidebarItems.push(section);
@@ -53,6 +53,7 @@ indexFilesPath.forEach(indexFilePath => {
             link.link = key + item.children[0]?.props?.href
           }
           section.items.push(link);
+          collapsedCount += 1;
         }
       })
     }
@@ -60,6 +61,7 @@ indexFilesPath.forEach(indexFilePath => {
   // 若无子目录就使用#跳转
   sidebarItems.forEach(sidebarItem => {
     if (!sidebarItem.items.length) sidebarItem.link =  sidebarItem.linkTemp;
+    sidebarItem.collapsed =  sidebarItems.length > 8 && collapsedCount > 40;
   })
   sidebar[key] = sidebarItems;
 })

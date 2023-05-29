@@ -8,7 +8,7 @@
 npm i amis -S
 ```
 
-1.  html 中引入 amis （vite中）
+2. html 中引入 amis （vite中）
 
 ```javascript
 // vite项目中：index.html
@@ -16,27 +16,24 @@ npm i amis -S
 <script src="node_modules/amis/sdk/sdk.js"></script>
 ```
 
-微前端 qiankun 中注意：
+::: details 微前端 qiankun.js 中的踩坑经验
 
-*   Amis JS SDK 必须先于 qiankun 引入，否则会报`lifecycle entry` 未配置的错误。
-*   若主服务配置的 `font-size` 与子服务不同，会影响 amis 通过 `rem` 设置的样式。
-    *   最快的解决方案是页面中内嵌一个`<iframe src="amis路径"></iframe>`。iframe会引起一些全局弹窗的问题.
-    *   主流做法需要将子服务的rem粒度设置与主服务相等。再用js脚本重置amis中sdk.css的rem，脚本如下：
+1. Amis JS SDK 必须先于 qiankun 引入，否则会报`lifecycle entry` 未配置的错误。
 
-```js
+2. 若主服务配置的 `font-size` 与子服务不同，会影响 amis 通过 `rem` 设置的样式。
+
+* 最快的解决方案是页面中内嵌一个`<iframe src="amis路径"></iframe>`。iframe会引起一些全局弹窗的问题.
+* 主流做法需要将子服务的 **rem 粒度** 设置与主服务相等。再用js脚本重置 amis 中 sdk.css 的rem，脚本如下：
+
+::: code-group
+
+```js [amis-rewrite-rem.js]
 /*
  * 文件名：root/amis-rewrite-rem.js
- * 作用：将node_modules/amis/sdk/sdk.css中的rem全局*2，解决子应用部署在主应用rem单位不一致的bug
+ * 作用：将node_modules/amis/sdk/sdk.css 中的 rem 全局 * 2，解决子应用部署在主应用rem 单位不一致的 bug
  * 流程解析：
- * 1. 第一次执行，会把sdk.css重命名为sdk-origin.css，再rem*2生成sdk.css。以后每次执行，如果存在sdk-origin.css，就会跳过。
- * 2. 也就是说 执行npm install之后，只有第一次执行 npm run serve会执行脚本。
- * Usage: 
- * 1. 将脚本配置在 package.json > script 中。举例
- * "scripts": {
- *   "serve": "node amis-rewrite-rem.js && vue-cli-service serve",
- *   "build": "node amis-rewrite-rem.js && vue-cli-service build"
- * },
- * 2. vue.config.js 的 webpack 钩子中。略。
+ * 1. 第一次执行，会把 sdk.css 重命名为 sdk-origin.css，再 rem * 2生成 sdk.css。以后每次执行，如果存在 sdk-origin.css，就会跳过。
+ * 2. 也就是说 执行 npm install 之后，只有第一次执行 npm run serve 会执行脚本。
  */
 const fs = require('fs');
 const path = require('path');
@@ -86,8 +83,25 @@ try {
   console.error("amis.css 重写失败!\n请检查是否已执行 npm install!\n报错详情：\n", error);
 }
 ```
+```json [package.json]
+/*
+ * Usage 1: 
+ * 将脚本配置在 package.json > script 中。举例：
+ */
+{
+  "scripts": {
+    "serve": "node amis-rewrite-rem.js && vue-cli-service serve",
+    "build": "node amis-rewrite-rem.js && vue-cli-service build"
+  }
+}
+/*
+ * Usage 2: 
+ * vue.config.js 的 webpack 钩子中。略。
+ */
+```
+:::
 
-1.  Vue 中定义通用的 Amis 组件
+3. Vue 中定义通用的 Amis 组件
 
 ```javascript
 // src > components > amis.vue
@@ -114,7 +128,7 @@ onMounted(() => {
 </script>
 ```
 
-1.  Vue 中使用 Amis 组件
+4. Vue 中使用 Amis 组件
 
 ```javascript
 <Amis :amisjson="amisjson"></Amis>
