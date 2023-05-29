@@ -12,7 +12,7 @@ export default defineConfig({
   head: [
     [
       'link',
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/books/assets/favicon.ico' }
     ],
   ],
   themeConfig: {
