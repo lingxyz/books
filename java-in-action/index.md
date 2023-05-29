@@ -199,15 +199,15 @@
 
 - [9.1 泛型Generics](collection/generics.md)
 - [9.1.1 自定义泛型](collection/custom-generics.md)
-- 9.1.2 容器中使用泛型
-- 9.2 Collection接口
-- 9.3.1 List特点和常用方法
-- 9.3.2 ArrayList特点和底层实现
-- 9.3.3 LinkedList特点和底层实现
-- 9.3.4 Vector向量
-- 9.4 Map接口
-- 9.4.1 HashMap和HashTable
-- 9.4.2 HashMap底层实现详解
+- [9.1.2 容器中使用泛型](collection/generics-containers.md)
+- [9.2 Collection接口](collection/collection.md)
+- [9.3.1 List特点和常用方法](collection/list.md)
+- [9.3.2 ArrayList特点和底层实现](collection/arraylist.md)
+- [9.3.3 LinkedList特点和底层实现](collection/linkedlist.md)
+- [9.3.4 Vector向量](collection/vector.md)
+- [9.4 Map接口](collection/map.md)
+- [9.4.1 HashMap和HashTable](collection/hash-maptable.md)
+- [9.4.2 HashMap底层实现详解](collection/hashmap-bottom.md)
 - 9.4.3 二叉树和红黑二叉树
 - 9.4.4 TreeMap的使用和底层实现
 - 9.5 Set接口
