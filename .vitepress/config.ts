@@ -16,11 +16,11 @@ export default defineConfig({
     ],
     [
       'link',
-      { rel: 'stylesheet', href: '/plugins/amis/sdk/sdk.css' }
+      { rel: 'stylesheet', href: '/plugins/amis/sdk.css' }
     ],
     [
       'script',
-      { src: '/plugins/amis/sdk/sdk.js' }
+      { src: '/plugins/amis/sdk.js' }
     ],
   ],
   themeConfig: {

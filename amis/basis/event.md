@@ -78,7 +78,7 @@ const ajax = {
     "type": "action",
     "label": "action示例：发出一个请求",
     "actionType": "ajax",
-    "api": "/plugins/amis/mock/form/save.json"
+    "api": "/mock/amis/form/save.json"
   }
 }
 

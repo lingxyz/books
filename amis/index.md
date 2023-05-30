@@ -18,7 +18,7 @@
 - [内置组件](extend/components.md)
 - [使用经验](extend/experience.md)
 - [选型评判标准](extend/selection.md)
-- [混合开发](extend/mix.md)
+- [混合开发✨](extend/mix.md)
 
 ## 🦠 Amis 生态链
 
