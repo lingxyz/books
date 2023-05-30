@@ -223,13 +223,13 @@
 
 ## 第十章 IO技术
 
-- 10.1 基本概念和IO入门
-- 10.1.1 数据源
-- 10.1.2 流的概念
-- 10.1.3 第一个简单的IO流程序及深入理解
-- 10.1.4 Java中流的概念细分
-- 10.1.5 Java中IO流类的体系
-- 10.1.6 四大IO抽象类
+- [10.1 基本概念和IO入门](io/introduction.md)
+- [10.1.1 数据源](io/datasource.md)
+- [10.1.2 流的概念](io/flow-concept.md)
+- [10.1.3 第一个简单的IO流程序及深入理解](io/io-flow-program.md)
+- [10.1.4 Java中流的概念细分](io/stream-classify.md)
+- [10.1.5 Java中IO流类的体系](io/stream-class.md)
+- [10.1.6 四大IO抽象类](io/stream-abstract-class.md)
 - 10.2.1 文件字节流
 - 10.2.2 文件字符流
 - 10.2.3 缓冲字节流
