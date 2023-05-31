@@ -57,7 +57,7 @@
 
 ## 第三章 控制语句
 
-- 3.0 控制语句
+- [3.0 控制语句](control-statement/introduction.md)
 - 3.1 选择结构
 - 3.1.1 if单选择结构
 - 3.1.2 if-else双选择结构
@@ -70,12 +70,12 @@
 - 3.2.4 嵌套循环
 - 3.2.5 break语句和continue语句
 - 3.2.6 带标签的break和continue
-- 3.3 语句块
-- 3.4 方法
-- 3.5 方法的重载(overload)
-- 3.6 递归结构
-- 第三章 总结
-- 第三章 作业
+- [3.3 语句块](control-statement/block.md)
+- [3.4 方法](control-statement/method.md)
+- [3.5 方法的重载(overload)](control-statement/method-overload.md)
+- [3.6 递归结构](control-statement/recursion.md)
+- [第三章 总结](control-statement/summery.md)
+- [第三章 作业](control-statement/exercise.md)
 
 ## 第四章 Java面向对象基础
 
@@ -108,14 +108,14 @@
 
 ## 第五章 Java面向对象进阶
 
-- 5.1 概述
-- 5.1.1 继承的实现
-- 5.1.2 instanceof运算符
-- 5.1.3 继承使用要点
-- 5.1.4 方法的重写override
-- 5.2.1 Object类基本特性
-- 5.2.2 toString方法
-- 5.2.3 ==和equals方法
+- [5.1 概述](object-oriented/introduction.md)
+- [5.1.1 继承的实现](object-oriented/extends.md)
+- [5.1.2 instanceof运算符](object-oriented/instanceof.md)
+- [5.1.3 继承使用要点](object-oriented/essentials.md)
+- [5.1.4 方法的重写override](object-oriented/override.md)
+- [5.2.1 Object类基本特性](object-oriented/object.md)
+- [5.2.2 toString方法](object-oriented/tostring.md)
+- [5.2.3 ==和equals方法](object-oriented/equals.md)
 - 5.3 super关键字
 - 5.3.1 继承树追溯
 - 5.4.1 封装的作用和含义
@@ -160,7 +160,7 @@
 
 ## 第七章 数组
 
-- 7.1 数组概述和特点
+- [7.1 数组概述和特点](array/introduction.md)
 - 7.2.1 数组声明
 - 7.2.2 初始化
 - 7.3.1 数组的遍历
@@ -252,7 +252,7 @@
 
 ## 第十一章 多线程技术
 
-- 11.1 基本概念
+- [11.1 基本概念](thread/introduction.md)
 - 11.1.1 程序
 - 11.1.2 进程
 - 11.1.3 线程
@@ -277,7 +277,7 @@
 
 ## 第十二章 网络编程
 
-- 12.1 基本概念
+- [12.1 基本概念](network/introduction.md)
 - 12.2.1 TCP协议和UDP协议的联系和区别
 - 12.2.2 TCP协议
 - 12.2.3 UDP协议
@@ -292,7 +292,7 @@
 
 ## 第十三章 J20飞机游戏项目(手把手教)
 
-- 13.1 简介和项目目标
+- [13.1 简介和项目目标](airplane-games/introduction.md)
 - 13.2 游戏项目基本功能开发
 - 13.2.1 AWT技术画出游戏主窗口(0.1版)
 - 13.2.2 图形和文本绘制 (0.2版)
