@@ -73,6 +73,13 @@ features:
     details: Evan You
     tag: JavaScript
 
+  - icon:
+      src: /assets/amis.png
+    title: 《Amis 开发指南》
+    details: Zero の 杂记
+    link: /amis/
+    tag: JavaScript
+
   - icon: 🚀
     title: 《图解 HTTP》
     details: xxx
