@@ -82,9 +82,12 @@ const ajax = {
   }
 }
 
-setTimeout(() => {
-  var amis = amisRequire('amis/embed');
-  amis.embed('#dialog', dialog);
-  amis.embed('#ajax', ajax);
-}, 1000)
+// 仅在浏览器端执行（跳过SSR）
+if (!import.meta.env.SSR) {
+  setTimeout(() => {
+    var amis = amisRequire('amis/embed');
+    amis.embed('#dialog', dialog);
+    amis.embed('#ajax', ajax);
+  }, 1000)
+}
 </script>

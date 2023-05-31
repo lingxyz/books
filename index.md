@@ -8,14 +8,15 @@ hero:
   tagline: Ebooks & reading notes
   actions:
     - theme: brand
-      text: Get Started
-      link: /
+      text: 主页
+      link: https://zhangling.site/
     - theme: alt
       text: View on GitHub
       link: https://github.com/lingxyz/books
 
 features:
-  - icon: 📝
+  - icon:
+      src: /assets/su.png
     title: 《Java 实战教程系列》
     details: 速学堂
     link: /java-in-action/

@@ -131,7 +131,7 @@ export class FormItemTextRenderer extends React.Component {
 
 ​    下面是一个案例：
 
-:::code-group
+::: code-group
 ```vue [src/pages/LowDemo.vue]
 /**
   * 在 pages 中，预期的使用方式

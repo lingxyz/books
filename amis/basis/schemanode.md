@@ -93,9 +93,12 @@ const aa = {
   ]
 }
 
-setTimeout(() => {
-  var amis = amisRequire('amis/embed');
-  amis.embed('#hello', hello);
-  amis.embed('#aa', aa);
-}, 1000)
+// 仅在浏览器端执行（跳过SSR）
+if (!import.meta.env.SSR) {
+  setTimeout(() => {
+    var amis = amisRequire('amis/embed');
+    amis.embed('#hello', hello);
+    amis.embed('#aa', aa);
+  }, 1000)
+}
 </script>
