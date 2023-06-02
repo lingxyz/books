@@ -15,6 +15,12 @@ hero:
       link: https://github.com/lingxyz/books
 
 features:
+  - icon: 📝
+    title: 《SpringBoot 模板》
+    details: Zero の 杂记
+    link: /template/springboot/
+    tag: Java
+
   - icon:
       src: /assets/su.png
     title: 《Java 实战教程系列》
